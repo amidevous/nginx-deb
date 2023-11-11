@@ -76,13 +76,13 @@ download_github_repo -b master hnakamur/nginx-lua-saml-service-provider
 download_github_repo -b master hnakamur/nginx-lua-session
 download_github_repo -b master hamishforbes/lua-ffi-zlib
 download_github_repo -b master Phrogz/SLAXML
+rm -rf ngx_http_geoip2_module
 download_github_repo -b master leev/ngx_http_geoip2_module
 download_github_repo -b master e98cuenc/ngx_upstream_jdomain
 download_github_repo -b main google/nginx-sxg-module
 download_github_repo -b master woothee/lua-resty-woothee
 download_github_repo -b master ruoshan/lua-resty-jump-consistent-hash
 download_github_repo -b master nginx/njs
-download_github_repo -b master leev/ngx_http_geoip2_module
 wget https://github.com/openssl/openssl/archive/refs/tags/OpenSSL_1_1_1t.tar.gz -qO OpenSSL_1_1_1t.tar.gz
 tar -xf OpenSSL_1_1_1t.tar.gz
 rm -f OpenSSL_1_1_1t.tar.gz
