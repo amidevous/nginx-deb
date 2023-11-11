@@ -12,7 +12,7 @@ Build-Depends: debhelper (>= 9~),
 Standards-Version: 3.9.8.0
 Homepage: http://nginx.org
 
-Package: nginx
+Package: xtreamcodes-main-nginx
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}, lsb-base (>= 3.0-6), adduser
 Provides: httpd
@@ -20,7 +20,7 @@ Description: high performance web server
  nginx [engine x] is an HTTP and reverse proxy server, as well as
  a mail proxy server.
 
-Package: nginx-dbg
+Package: xtreamcodes-main-nginx-dbg
 Architecture: any
 Section: debug
 Priority: extra
