@@ -83,8 +83,8 @@ config.status.nginx: config.env.nginx
 		--with-mail_ssl_module \
 		--with-file-aio \
 		--with-cpu-opt=generic \
-		--with-openssl=./openssl-OpenSSL_1_1_1h \
-		--add-module=./ngx_http_geoip2_module \
+		--with-openssl=$(CURDIR)/openssl-OpenSSL_1_1_1h \
+		--add-module=$(CURDIR)/ngx_http_geoip2_module \
 		--with-cc-opt="$(CFLAGS)" \
 		--with-ld-opt="$(LDFLAGS)"
 	touch $@
@@ -116,8 +116,8 @@ config.status.nginx_debug: config.env.nginx_debug
 		--with-mail_ssl_module \
 		--with-file-aio \
 		--with-cpu-opt=generic \
-		--with-openssl=./openssl-OpenSSL_1_1_1h \
-		--add-module=./ngx_http_geoip2_module \
+		--with-openssl=$(CURDIR)/openssl-OpenSSL_1_1_1h \
+		--add-module=$(CURDIR)/ngx_http_geoip2_module \
 		--with-cc-opt="$(CFLAGS)" \
 		--with-ld-opt="$(LDFLAGS)" \
 		--with-debug
