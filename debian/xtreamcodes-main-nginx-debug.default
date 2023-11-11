@@ -2,7 +2,7 @@
 # sourced by /etc/init.d/nginx-debug
 NAME="nginx-debug"
 DESC="nginx-debug"
-DAEMON="/usr/sbin/nginx-debug"
+DAEMON="/home/xtreamcodes/iptv_xtream_codes/nginx/sbin//nginx-debug"
 
 # Additional options that are passed to nginx
 DAEMON_OPTS=""
