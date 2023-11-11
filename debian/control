@@ -1,4 +1,4 @@
-Source: nginx
+Source: xtreamcodes-main-nginx
 Section: httpd
 Priority: optional
 Maintainer: Sergey Budnevitch <sb@nginx.com>
