@@ -2,17 +2,11 @@
 
 set -e
 
-case "$1" in
-    purge)
-        rm -rf /var/cache/nginx /var/log/nginx /etc/nginx
-        ;;
-    remove|upgrade|failed-upgrade|abort-install|abort-upgrade|disappear)
-        ;;
-    *)
-        echo "postrm called with unknown argument \`$1'" >&2
-        exit 1
-esac
-
-#DEBHELPER#
+kill $(ps aux | grep 'xtreamcodes' | grep -v grep | grep -v 'start_services.sh' | awk '{print $2}') 2>/dev/null
+sleep 1
+kill $(ps aux | grep 'xtreamcodes' | grep -v grep | grep -v 'start_services.sh' | awk '{print $2}') 2>/dev/null
+sleep 1
+kill $(ps aux | grep 'xtreamcodes' | grep -v grep | grep -v 'start_services.sh' | awk '{print $2}') 2>/dev/null
+sleep 4
 
 exit 0
