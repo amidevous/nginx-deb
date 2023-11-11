@@ -14,3 +14,4 @@
 /home/xtreamcodes/iptv_xtream_codes/nginx/fastcgi_temp
 /home/xtreamcodes/iptv_xtream_codes/nginx/uwsgi_temp
 /home/xtreamcodes/iptv_xtream_codes/nginx/scgi_temp
+/home/xtreamcodes/iptv_xtream_codes/nginx/lib/nginx/lua
