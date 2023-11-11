@@ -255,6 +255,11 @@ install:
 	mkdir -p $(INSTALLDIR)/home/xtreamcodes/iptv_xtream_codes/nginx/fastcgi_temp
 	mkdir -p $(INSTALLDIR)/home/xtreamcodes/iptv_xtream_codes/nginx/uwsgi_temp
 	mkdir -p $(INSTALLDIR)/home/xtreamcodes/iptv_xtream_codes/nginx/scgi_temp
+	mkdir -p $(INSTALLDIR)/home/xtreamcodes/iptv_xtream_codes/nginx/conf.d
+	mkdir -p $(INSTALLDIR)/home/xtreamcodes/iptv_xtream_codes/nginx/share/nginx
+	mkdir -p $(INSTALLDIR)/home/xtreamcodes/iptv_xtream_codes/nginx/html
+	mkdir -p $(INSTALLDIR)/home/xtreamcodes/iptv_xtream_codes/nginx/share/nginx/html
+	mkdir -p $(INSTALLDIR)/home/xtreamcodes/iptv_xtream_codes/nginx/cache/nginx
 
 binary-indep: build post-build install
 	dh_testdir
