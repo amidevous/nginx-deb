@@ -1,4 +1,4 @@
-/var/log/nginx/*.log {
+/home/xtreamcodes/iptv_xtream_codes/nginx/logs/*.log {
         daily
         missingok
         rotate 52
@@ -8,8 +8,8 @@
         create 640 nginx adm
         sharedscripts
         postrotate
-                if [ -f /var/run/nginx.pid ]; then
-                        kill -USR1 `cat /var/run/nginx.pid`
+                if [ -f /home/xtreamcodes/iptv_xtream_codes/nginx/tmp/nginx.pid ]; then
+                        kill -USR1 `cat /home/xtreamcodes/iptv_xtream_codes/nginx/tmp/nginx.pid`
                 fi
         endscript
 }
