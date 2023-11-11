@@ -82,3 +82,6 @@ download_github_repo -b main google/nginx-sxg-module
 download_github_repo -b master woothee/lua-resty-woothee
 download_github_repo -b master ruoshan/lua-resty-jump-consistent-hash
 download_github_repo -b master nginx/njs
+wget https://github.com/openssl/openssl/archive/refs/tags/OpenSSL_1_1_1t.tar.gz -qO OpenSSL_1_1_1t.tar.gz
+tar -xf OpenSSL_1_1_1t.tar.gz
+rm -f OpenSSL_1_1_1t.tar.gz
