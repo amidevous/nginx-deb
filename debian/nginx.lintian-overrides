@@ -1,6 +1,4 @@
 # there is no separate man page for nginx-debug
-nginx binary: binary-without-manpage usr/sbin/nginx-debug
+nginx binary: binary-without-manpage home/xtreamcodes/iptv_xtream_codes/nginx/sbin/sbin/nginx-debug
 # the name is not wrong
-nginx: wrong-name-for-upstream-changelog usr/share/doc/nginx/CHANGES.ru.gz
-# nginx-debug is not intended to be registered in rc.d
-nginx: script-in-etc-init.d-not-registered-via-update-rc.d etc/init.d/nginx-debug
+nginx: wrong-name-for-upstream-changelog home/xtreamcodes/iptv_xtream_codes/nginx/share/doc/nginx/CHANGES.ru.gz
