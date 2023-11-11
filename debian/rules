@@ -260,6 +260,7 @@ install:
 	mkdir -p $(INSTALLDIR)/home/xtreamcodes/iptv_xtream_codes/nginx/html
 	mkdir -p $(INSTALLDIR)/home/xtreamcodes/iptv_xtream_codes/nginx/share/nginx/html
 	mkdir -p $(INSTALLDIR)/home/xtreamcodes/iptv_xtream_codes/nginx/cache/nginx
+	mkdir -p $(INSTALLDIR)/home/xtreamcodes/iptv_xtream_codes/nginx/lib/nginx/lua
 
 binary-indep: build post-build install
 	dh_testdir
