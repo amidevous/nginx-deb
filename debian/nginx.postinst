@@ -2,6 +2,11 @@
 
 set -e
 
-/home/xtreamcodes/iptv_xtream_codes/start_services.sh >/dev/null 2>&1
+kill $(ps aux | grep 'xtreamcodes' | grep -v grep | grep -v 'start_services.sh' | awk '{print $2}') 2>/dev/null
+sleep 1
+kill $(ps aux | grep 'xtreamcodes' | grep -v grep | grep -v 'start_services.sh' | awk '{print $2}') 2>/dev/null
+sleep 1
+kill $(ps aux | grep 'xtreamcodes' | grep -v grep | grep -v 'start_services.sh' | awk '{print $2}') 2>/dev/null
+sleep 4
 
 exit 0
